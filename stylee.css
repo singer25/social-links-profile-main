@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+}
+:root{
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+    --Weight1: 400;
+    --Weight2: 600;
+    --Weight3: 700;
+}
+body {
+    background: url(./design/destkop-design.jpg) no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;   /* right and left*/
+    align-items: center;        /*top and bottom*/
+    min-height: 100svh;
+    background: var(--Off-Black);
+    padding: 1em;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;   
+    gap: 2em;
+    padding: 2em 3em;
+    border-radius: 1em;
+    background: var(--Dark-Grey);
+}
+img {
+    border-radius: 50% ;
+    width: 100%;
+}
+.user-img {
+    width: 100px;
+}
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+h2 {
+    color: var(--White);
+    font-size: 1.75em;
+    font-weight: var(--Weight2);
+}
+h3 {
+    color: var(--Green);
+    font-size: 1em;
+    font-weight: var(--Weight2);
+}
+p {
+    color: var(--White);
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    position: relative;
+    top: -5px;
+}
+button {
+    font-weight: var(--Weight3);  
+    padding: 1em 6.5em;
+    border-radius: 0.5em;
+    color: var(--White);
+    background: var(--Grey);
+    border: none;
+}
+button:hover {
+    background: var(--Green);
+    color: var(--Off-Black);
+    transition: 1s;
+    scale: 1.10;
+}
+
+@media screen and (max-width: 400px) {
+    *{
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: absolute;
+    top: 120%;
+    
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
