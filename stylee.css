@@ -88,29 +88,24 @@ button:hover {
         font-size: 12px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 footer {
-    position: absolute;
-    top: 120%;
-    
+    top: 120%;  
 }
-
 .attribution {
-    font-size: 11px;
     text-align: center;
+    margin:4em auto;
+    color: white;
+}
+.attribution:hover{
+    transition: 1s;
+    scale: 1.10;
+    padding: 1em 2em;
+    border: 0.5em solid var(--Green);
+    box-shadow: 0.5em 0.5em var(--White);
+    border-radius: 1em;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: var(--Green);
+    text-decoration: none;
+    font-weight:var(--Weight3);
 }
